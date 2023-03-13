@@ -1,6 +1,11 @@
 export const FirstApp = () => {
     return (
-      <h1>componente Jhon Jairo</h1>
+
+        //fragmento
+        <>
+            <h1>Jhon Jairo</h1>
+            <p>soy un parrafo</p>
+        </>
     );
 }
 // rafc => atajo crear component fuction
