@@ -8,15 +8,16 @@ const newNombre = () => {
     return 'Jhon Jairo';
 }
 
-export const FirstApp = () => {
-
+export const FirstApp = ( { title, subTitle } ) => {
+    //console.log(props);
     return (
 
         //fragmento
         <>
+            <h1>{title}</h1>
             <h1>Hola mundo {newNombre()}</h1>
             {/* <code> { JSON.stringify(newMessage) }</code> */}
-            <p>soy un parrafo</p>
+            <p>soy un parrafo {subTitle}</p>
         </>
     );
 }

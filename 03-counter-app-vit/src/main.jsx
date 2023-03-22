@@ -10,6 +10,6 @@ const divRoot = createRoot(document.getElementById('root'));
 
 divRoot.render(
     <React.StrictMode>
-        <FirstApp />
+        <FirstApp title="Hola soy Goku" subTitle="123"/>
     </React.StrictMode>,
 );
