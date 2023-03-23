@@ -1,3 +1,5 @@
+import PropsTypes from 'prop-types'; // PropTypes => definimos el tipo a las props
+
 // const newMessage = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const newMessage = {
     message: 'Hola mundo',
@@ -22,3 +24,8 @@ export const FirstApp = ( { title, subTitle } ) => {
     );
 }
 // rafc => atajo crear component fuction
+
+FirstApp.propTypes = {
+    title: PropsTypes.string.isRequired,
+    subTitle: PropsTypes.number.isRequired,
+}
