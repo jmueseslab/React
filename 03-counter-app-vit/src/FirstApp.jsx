@@ -10,7 +10,7 @@ const newNombre = () => {
     return 'Jhon Jairo';
 }
 
-export const FirstApp = ( { title, subTitle } ) => {
+export const FirstApp = ( { title, subTitle, name } ) => {
     //console.log(props);
     return (
 
@@ -20,6 +20,7 @@ export const FirstApp = ( { title, subTitle } ) => {
             <h1>Hola mundo {newNombre()}</h1>
             {/* <code> { JSON.stringify(newMessage) }</code> */}
             <p>soy un parrafo {subTitle}</p>
+            <p>{name}</p>
         </>
     );
 }
@@ -27,5 +28,12 @@ export const FirstApp = ( { title, subTitle } ) => {
 
 FirstApp.propTypes = {
     title: PropsTypes.string.isRequired,
-    subTitle: PropsTypes.number.isRequired,
+    subTitle: PropsTypes.string
+}
+
+// Default props entran antes que propTypes
+FirstApp.defaultProps = {
+    title:'No hay titulo',
+    subTitle:'No hay subtitulo',
+    name:'Jhon Jairo'
 }
