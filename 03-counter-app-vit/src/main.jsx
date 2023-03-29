@@ -11,6 +11,6 @@ const divRoot = createRoot(document.getElementById('root'));
 
 divRoot.render(
     <React.StrictMode>
-        <CounterApp value={123}/>
+        <CounterApp value={ 20 }/>
     </React.StrictMode>,
 );

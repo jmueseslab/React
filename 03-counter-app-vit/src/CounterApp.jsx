@@ -1,18 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
 import PropsTypes from 'prop-types'; 
 
 export const CounterApp = ({value}) => {
 
+  const [ counter, setCounter ] = useState( value );
+
   const handleAdd = () =>{
-    console.log('+1');
-    value = 1000;
+    //console.log(event);
+    setCounter((c) => c + 1 );
   }
 
   return (
     //fragmento
     <>
         <h1>CounterApp</h1>
-        <h2> { value } </h2>
+        <h2> { counter } </h2>
 
         {/* <button onClick={ (event) => handleAdd (event, 'hola') }> */}
         < button onClick={ handleAdd }>  
