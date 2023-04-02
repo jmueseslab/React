@@ -4,6 +4,11 @@ import PropsTypes from 'prop-types';
 
 export const CounterApp = ({value}) => {
 
+  // cuando cambia el estado el componente se vuelve a ejecutar
+  // API...FETCH
+
+  console.log('Render');
+
   const [ counter, setCounter ] = useState( value );
 
   const handleAdd = () =>{
