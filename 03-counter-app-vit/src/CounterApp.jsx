@@ -11,6 +11,11 @@ export const CounterApp = ({value}) => {
     setCounter((c) => c + 1 );
   }
 
+  const handleSubstract = () => setCounter(counter - 1 );
+
+
+  const handleReset = () => setCounter( value );
+
   return (
     //fragmento
     <>
@@ -18,9 +23,9 @@ export const CounterApp = ({value}) => {
         <h2> { counter } </h2>
 
         {/* <button onClick={ (event) => handleAdd (event, 'hola') }> */}
-        < button onClick={ handleAdd }>  
-          +1
-        </button>
+        < button onClick={ handleAdd }> +1 </button>
+        < button onClick={ handleSubstract }> -1 </button>
+        < button onClick={ handleReset }> Reset </button>
     </>
   )
 }
