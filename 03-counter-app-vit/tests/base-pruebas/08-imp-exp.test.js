@@ -42,7 +42,7 @@ describe('Pruebas en 08-imp-exp', () => {
         expect(heroOwner).toEqual(heroes.filter((heroe) => heroe.owner === owner));
     });
 
-    //Debe de retornar un arreglo con los heroes de Marvel.
+    //Debe de retornar un arreglo con los heroes de Marvel
     //Length === 2
 
     test('getHeroeByOwner debe retornar un arreglo de heroes por MARVEL', () => {
